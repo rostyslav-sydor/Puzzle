@@ -37,7 +37,6 @@ def checkColors(board: list) -> bool:
                  (startingRow+4, startingColumn+2),
                  (startingRow+4, startingColumn+3),
                  (startingRow+4, startingColumn+4)]
-        print(cells)
         for cell in cells:
             currentCell = board[cell[0]][cell[1]]
             if currentCell != ' ' and currentCell != "*":
@@ -48,3 +47,8 @@ def checkColors(board: list) -> bool:
         startingRow += 1
         startingColumn -= 1
     return True
+
+def validateBoard(board: list) -> bool:
+    if checkColors(board) and checkColumns(board) and checkRows(board):
+        return True
+    return Falses
