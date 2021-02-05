@@ -1,3 +1,6 @@
+"""
+https://github.com/rostyslav-sydor/Puzzle
+"""
 def checkColumns(board: list) -> bool:
     """
     Returns True if there is no repeating numbers in the columns.
